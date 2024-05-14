@@ -10,7 +10,7 @@ from app.users.dao import UsersDAO
 
 
 def get_token(request: Request):
-    token = request.cookies.get("news_access_token")
+    token = request.cookies.get("new_access_token")
     if not token:
         raise TokenAbsentException
     return token
